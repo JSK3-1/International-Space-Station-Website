@@ -1,0 +1,327 @@
+/* ---- Global ---- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ---- Navbar ---- */
+.navbar {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-section img {
+  height: 60px;
+}
+
+.navbar h2 {
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li a.active {
+  text-decoration: underline;
+}
+
+/* ---- Mobile menu button ---- */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* ---- Hero ---- */
+.hero {
+  background-image: url("../IMAGES/Earth.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text {
+  background: rgba(0,0,0,0.55);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 700px;
+}
+
+/* ---- Facts ---- */
+.facts {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.fact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.fact {
+  background: #f2f2f2;
+  color: black;
+  width: 220px;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+/* ---- History ---- */
+.history {
+  padding: 140px 60px 80px;
+}
+
+.history-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.history-left,
+.history-right {
+  flex: 1;
+  min-width: 350px;
+}
+
+.iss-photo {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.timeline {
+  background: rgba(255,255,255,0.06);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* ---- Life Aboard ---- */
+.life-layout {
+  padding: 140px 60px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.life-left,
+.life-right {
+  flex: 1;
+  min-width: 350px;
+}
+
+.life-photo {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* ---- Research ---- */
+.research {
+  padding: 140px 60px 80px;
+}
+
+.research-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.research-left,
+.research-right {
+  flex: 1;
+  min-width: 350px;
+}
+
+.research-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* ---- Contact ---- */
+.contact-layout {
+  padding: 140px 60px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+/* form box */
+.contact-left {
+  background: #f5f5f5;
+  color: #111;
+  padding: 35px;
+  border-radius: 16px;
+  flex: 1;
+  min-width: 350px;
+}
+
+/* form text */
+.contact-left h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* inputs */
+.contact-left input,
+.contact-left textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: none;
+  background: #eeeeee;
+  font-size: 14px;
+}
+
+.contact-left textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* button */
+.contact-left button {
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: white;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* right info */
+.contact-right {
+  flex: 1;
+  min-width: 350px;
+}
+
+.contact-right h2 {
+  margin-top: 0;
+}
+
+/* ---- References ---- */
+.references {
+  padding: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.references h3 {
+  margin-bottom: 20px;
+}
+
+.references ul {
+  padding-left: 20px;
+}
+
+.references li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.references a {
+  word-break: break-word;
+}
+
+/* ---- Footer ---- */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 900px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar nav {
+    display: none;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .navbar nav.show {
+    display: block;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .history-layout,
+  .life-layout,
+  .research-layout,
+  .contact-layout {
+    flex-direction: column;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .references {
+    padding: 0 25px 80px;
+  }
+}
